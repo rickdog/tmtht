@@ -2,7 +2,9 @@
  * (e.g. http://www.themillertellshertale.co.uk/index.cfm?page=index&show=240),
  * and output it as an unordered list as a prompt.
  */
+ alert(1);
 (function(){
+  alert(2);
   
 var out = document.getElementsByName("playlistform")[0].childNodes[0].nodeValue;
 var re = new RegExp('\\n', 'g');
