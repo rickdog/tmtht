@@ -5,6 +5,7 @@
 
 function parse_table()
 {
+  alert(1);
   var out = document.getElementsByName("playlistform")[0].childNodes[0].nodeValue;
   var re = new RegExp('\\n', 'g');
   out = out.replace(re, '') + '<br><p>For more information about all the music played and links to the artist websites, please check <a href="http://www.themillertellshertale.co.uk" rel="nofollow">themillertellshertale.co.uk</a></p><ul>';
@@ -25,6 +26,6 @@ function parse_table()
   }
   
   out += "</ul>";
-  console.log(out);
+  //console.log(out);
   prompt("Converted", out);
 }
